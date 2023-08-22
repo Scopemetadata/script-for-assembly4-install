@@ -29,6 +29,7 @@ sudo ln -s /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-
 echo '{
   "default-address-pools":
   [
+    {"base":"172.30.0.0/16","size":24},
     {"base":"10.201.0.0/16","size":24}
   ]
 }' | sudo tee /etc/docker/daemon.json > /dev/null
